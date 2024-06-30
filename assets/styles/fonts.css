@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'valorant';
+    src: url('../fonts/valorantFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserratFont.ttf') format('truetype');
+}

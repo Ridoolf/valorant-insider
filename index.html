@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+    <title>Valorant Insider | Agentes</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav_logo">
+          <img src="./assets/img/logo.png" alt="logo del valorant" />
+          <h1>VALORANT<span> INSIDER</span></h1>
+        </div>
+        <ul class="nav_lista">
+          <li class="nav_lista_item">Inicio</li>
+          <li class="nav_lista_item">Agentes</li>
+          <li class="nav_lista_item">Mapas</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="filtro">
+        <ul class="filtro_lista">
+          <li class="filtro_lista_item">
+            <button class="filtro_actual btn_lista" id="todos">TODOS</button>
+          </li>
+          <li class="filtro_lista_item">
+            <button class="btn_lista" id="duelista">DUELISTA</button>
+          </li>
+          <li class="filtro_lista_item">
+            <button class="btn_lista" id="iniciador">INICIADOR</button>
+          </li>
+          <li class="filtro_lista_item">
+            <button class="btn_lista" id="centinela">CENTINELA</button>
+          </li>
+        </ul>
+      </div>
+      <div id="contenedor_agentes"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

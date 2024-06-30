@@ -1,0 +1,354 @@
+@import url('./variables.css');
+@import url('./fonts.css');
+
+/* general */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background);
+}
+
+::-webkit-scrollbar {
+    width: 5px; 
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary); 
+}
+
+/* nav */
+
+.nav{
+    color: var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 25px;
+}
+
+.nav_logo{
+    display: flex;   
+    align-items: center; 
+    gap: 20px;
+}
+
+.nav_logo h1{
+    font-family: 'valorant';
+}
+
+.nav_logo h1 span{
+    font-family: 'montserrat';
+    color: var(--color-primary);
+}
+
+.nav_logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.nav_lista{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav_lista_item{
+    font-family: 'montserrat';
+    cursor: pointer;
+}
+
+.nav_lista_item:hover{
+    color: var(--color-primary);
+    transition: .3s;
+}
+
+/* filtro */
+
+.filtro{
+    color: var(--color-text);
+    margin: 30px 50px;
+}
+
+.filtro_lista{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: 'montserrat';
+}
+
+.filtro_lista_item button{
+    background-color: var(--color-background);
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid var(--color-text);
+    border-radius: 15px;
+}
+
+.filtro_lista_item button:hover{
+    background-color: var(--color-secondary);
+    transition: .3s;
+}
+
+.filtro_actual{
+    background-color: var(--color-secondary) !important;
+}
+
+/* agentes */
+
+#contenedor_agentes{
+    padding: 10px 65px;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tarjeta_agente{
+    width: 100%;
+    cursor: pointer;
+    color: var(--color-text);
+    font-family: 'montserrat';
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    border: 5px solid var(--color-secondary);
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.tarjeta_agente:hover{
+    transform: scale(1.03);
+    background-color: rgba(253, 69, 86, .75);
+}
+
+.icono_agente{
+    filter: drop-shadow(10px 10px 4px var(--color-secondary));
+    width: 150px !important;
+    height: 150px !important;
+    margin-right: 15px;
+}
+
+.descripcion_agente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.descripcion_agente h3{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.contenedor_rol{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.contenedor_rol p{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.rol_agente{
+    width: 30px !important;
+    height: 30px;
+}
+
+.habilidades_agente img{
+    padding: 5px;
+    width: 55px;
+    height: 55px;
+}
+
+/* Responsive */
+
+@media (max-width: 815px) {
+
+    /* Navbar */
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_logo {
+        margin-bottom: 10px;
+    }
+
+    .nav_lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav_lista_item {
+        font-size: 1.2em;
+    }
+
+    /* Filtro */
+    
+    .filtro_lista{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Agentes */
+
+    #contenedor_agentes{
+        padding: 10px 25px;
+        justify-items: center;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .tarjeta_agente{
+        padding: 15px;
+        width: fit-content;
+    }
+    
+    .icono_agente{
+        width: 125px !important;
+        height: 125px !important;
+    }
+    
+    .descripcion_agente{
+        gap: 1px;
+    }
+    
+    .descripcion_agente h3{
+        font-size: 25px;
+    }
+    
+    .contenedor_rol{
+        padding: 10px;
+    }
+    
+    .contenedor_rol p{
+        font-size: 16px;
+        padding: 0;
+    }
+    
+    .rol_agente{
+        width: 25px !important;
+        height: 25px;
+    }
+    
+    .habilidades_agente img{
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 816px) and (max-width: 1024px) {
+    
+    /* Navbar */
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_logo {
+        margin-bottom: 15px;
+    }
+
+    .nav_lista {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav_lista_item {
+        font-size: 1em;
+    }
+
+    /* Filtro */
+
+    .filtro_lista{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Agentes */
+
+    #contenedor_agentes{
+        padding: 5px 5px;
+        justify-items: center;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tarjeta_agente{
+        padding: 18px;
+    }
+    
+    .icono_agente{
+        width: 95px !important;
+        height: 95px !important;
+        margin-right: 20px;
+    }
+    
+    .descripcion_agente{
+        gap: 1px;
+    }
+    
+    .descripcion_agente h3{
+        font-size: 20px;
+    }
+    
+    .contenedor_rol p{
+        font-size: 14px;
+        padding: 0;
+    }
+    
+    .rol_agente{
+        width: 20px !important;
+        height: 20px;
+    }
+    
+    .habilidades_agente img{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
