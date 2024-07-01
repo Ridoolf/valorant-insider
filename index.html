@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./assets/js/main.js" defer></script>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link
       rel="shortcut icon"
@@ -11,6 +10,11 @@
       type="image/x-icon"
     />
     <title>Valorant Insider | Agentes</title>
+    <script src="./assets/js/main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <header>
@@ -20,9 +24,12 @@
           <h1>VALORANT<span> INSIDER</span></h1>
         </div>
         <ul class="nav_lista">
-          <li class="nav_lista_item">Inicio</li>
-          <li class="nav_lista_item">Agentes</li>
-          <li class="nav_lista_item">Mapas</li>
+          <li class="nav_lista_item"><a href="#">Inicio</a></li>
+          <li class="nav_lista_item"><a href="#">Foro</a></li>
+          <li class="nav_lista_item"><a href="#">Agentes</a></li>
+          <li class="nav_lista_item"><a href="#">Mapas</a></li>
+          <li class="nav_lista_item"><a href="#">Armas</a></li>
+          <li class="nav_lista_item"><a href="#">Nosotros</a></li>
         </ul>
       </nav>
     </header>
@@ -45,6 +52,29 @@
       </div>
       <div id="contenedor_agentes"></div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="seccion_1">
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="" />
+          <h3>VALORANT <span>Insider</span></h3>
+        </div>
+        <ul class="lista_footer">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Foro</a></li>
+          <li><a href="#">Agentes</a></li>
+          <li><a href="#">Mapas</a></li>
+          <li><a href="#">Armas</a></li>
+        </ul>
+        <div class="nosotros">
+          <p><a href="#">Sobre NOSOTROS</a></p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="seccion_2">
+        <i class="bi bi-github"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+    </footer>
   </body>
 </html>

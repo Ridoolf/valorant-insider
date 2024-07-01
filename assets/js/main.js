@@ -1,7 +1,6 @@
 contenedor_agentes = document.getElementById('contenedor_agentes');
 btn_lista = document.querySelectorAll('.btn_lista');
 
-
 const URL = `https://valorant-api.com/v1/agents?language=es-MX`;
 
 fetch(URL)

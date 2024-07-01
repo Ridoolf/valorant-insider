@@ -28,7 +28,7 @@ body{
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-secondary); 
-}
+} 
 
 /* nav */
 
@@ -71,7 +71,12 @@ body{
     cursor: pointer;
 }
 
-.nav_lista_item:hover{
+.nav_lista_item a{
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.nav_lista_item a:hover{
     color: var(--color-primary);
     transition: .3s;
 }
@@ -182,6 +187,114 @@ body{
     padding: 5px;
     width: 55px;
     height: 55px;
+}
+
+/* Footer */
+
+footer{
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid var(--color-primary);
+    width: 95vw;
+    padding: 40px 20px;
+}
+
+.seccion_1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seccion_1 *{
+    width: 250px;
+}
+
+.seccion_1 ul{
+    list-style: none;
+}
+
+.seccion_1 a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h3{
+    font-family: 'valorant';
+    color: var(--color-text);
+    span{
+        color: var(--color-primary);
+    }
+}
+
+.logo img{
+    width: 70px;
+}
+
+.lista_footer{
+    font-family: 'montserrat';
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.lista_footer li a{
+    transition: .3s;
+}
+
+.lista_footer li:hover{
+    transform: scale(1.04);
+}
+
+.lista_footer li a:hover{
+    color: var(--color-primary);
+}
+
+.nosotros p{
+    padding: 10px;
+    font-family: 'montserrat';
+    font-size: 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.nosotros p:hover{
+    transform: scale(1.1);
+    background-color: var(--color-primary);
+    border: 3px solid var(--color-secondary);
+    border-radius: 20px;
+}
+
+.line{
+    width: 50%;
+    margin: 30px auto;
+    border: 1px solid var(--color-text);
+}
+
+.seccion_2{
+    display: flex;
+    justify-content: center;    
+    gap: 90px;
+}
+
+.seccion_2 i{
+    cursor: pointer;
+    color: var(--color-text);
+    font-size: 40px;
+    transition: .3s;
+}
+
+.seccion_2 i:hover{
+    transform: scale(1.2);
+    color: var(--color-primary);
 }
 
 /* Responsive */
